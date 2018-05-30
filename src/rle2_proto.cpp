@@ -41,4 +41,4 @@ NumericMatrix rle2_num(NumericVector x) {
       out(index,2) = n;
       out(index,3) = n-prespos;
       return(out);
-      }
+    }
