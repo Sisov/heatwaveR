@@ -22,7 +22,7 @@ detect_event <- function(data,
   ts_seas <- eval(substitute(seasClim), data)
   ts_thresh <- eval(substitute(threshClim), data)
   t_series <- data.frame(ts_x, ts_y, ts_seas, ts_thresh)
-  rm(ts_x); rm(ts_y); rm(ts_seas); rm(ts_thresh)
+  # rm(ts_x); rm(ts_y); rm(ts_seas); rm(ts_thresh)
 
   if (coldSpells) {
     t_series$ts_y <- -t_series$ts_y
